@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="90">
+    <author>Leo</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Thunderfarming FertilizerH</en>
+		<de>Thunderfarming FertilizerH</de>
+    </title>
+    <description>
+        <en>FertilizerH - Thunderfarming Edition</en>
+		<de>FertilizerH - Thunderfarming Edition</de>
+    </description>
+    <iconFilename>store/store_FertilizerH.dds</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="xml/FertilizerH.xml"/>
+    </storeItems>
+	<brands>
+        <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming"/>
+    </brands>
+	<multiplayer supported="true"/>
+</modDesc>

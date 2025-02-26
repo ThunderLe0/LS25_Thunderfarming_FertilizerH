@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ZA-TS 3200" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="35" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="36" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="41" filename="$data/shared/assets/assetLibraryStickers_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/assets/reflectors/lizard/redRound_02.i3d"/>
+    <File fileId="13" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.i3d"/>
+    <File fileId="25" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="15" filename="$data/shared/default_normal.png"/>
+    <File fileId="42" filename="$data/shared/default_specular.png"/>
+    <File fileId="40" filename="$data/shared/default_vmask.png"/>
+    <File fileId="29" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="28" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.png"/>
+    <File fileId="24" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="11" filename="$data/shared/detailLibrary/nonMetallic/dirt_diffuse.png"/>
+    <File fileId="10" filename="$data/shared/detailLibrary/nonMetallic/dirt_normal.png"/>
+    <File fileId="9" filename="$data/shared/detailLibrary/nonMetallic/dirt_specular.png"/>
+    <File fileId="31" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="30" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="33" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png"/>
+    <File fileId="32" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="47" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png"/>
+    <File fileId="46" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="12" filename="$data/shared/waterDroplets_normal.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="37" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="38" filename="$data/shared/window_vmask.png"/>
+    <File fileId="39" filename="$data/vehicles/amazone/zats3200/zats3200Decal_diffuse.png"/>
+    <File fileId="43" filename="$data/vehicles/amazone/zats3200/zats3200Grid_diffuse.png"/>
+    <File fileId="44" filename="$data/vehicles/amazone/zats3200/zats3200Grid_normal.png"/>
+    <File fileId="45" filename="$data/vehicles/amazone/zats3200/zats3200Grid_vmask.png"/>
+    <File fileId="34" filename="$data/vehicles/amazone/zats3200/zats3200LOD_vmask.png"/>
+    <File fileId="20" filename="$data/vehicles/amazone/zats3200/zats3200Lights_emissive.png"/>
+    <File fileId="16" filename="$data/vehicles/amazone/zats3200/zats3200Lights_vmask.png"/>
+    <File fileId="3" filename="$data/vehicles/amazone/zats3200/zats3200_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/amazone/zats3200/zats3200_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryStickers_metalPainted_mat" materialId="36" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="41"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+    </Material>
+    <Material name="standardSurface1" materialId="5" diffuseColor="0.4 0.4 0.4 1">
+    </Material>
+    <Material name="window_metalPainted_mat" materialId="10" alphaBlending="true" customShaderId="5">
+      <Texture fileId="37"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="38"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="zats3200_AMAZONE_GREEN1_01_mat" materialId="15" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="27"/>
+      <Custommap name="detailNormal" fileId="28"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="0.0603 0.2059 0.03"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="zats3200_AMAZONE_GREEN1_02_mat" materialId="27" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="27"/>
+      <Custommap name="detailNormal" fileId="28"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="0.0603 0.2059 0.03"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="zats3200_AMAZONE_ORANGE1_01_mat" materialId="14" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="27"/>
+      <Custommap name="detailNormal" fileId="28"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="1 0.1699 0"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="zats3200_AMAZONE_ORANGE1_02_mat" materialId="26" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="27"/>
+      <Custommap name="detailNormal" fileId="28"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="1 0.1699 0"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="zats3200_chrome_01_mat" materialId="20" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+    </Material>
+    <Material name="zats3200_chrome_02_mat" materialId="33" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+    </Material>
+    <Material name="zats3200_metalPainted_01_mat" materialId="12" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.9157 0.142 0.0002"/>
+    </Material>
+    <Material name="zats3200_metalPainted_02_mat" materialId="24" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.9157 0.142 0.0002"/>
+    </Material>
+    <Material name="zats3200_metalPaintedBlack_alphaBlending_mat" materialId="8" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200_metalPaintedBlack_mat" materialId="31" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200_metalPaintedBlack_opaque_mat" materialId="19" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200_plasticGraniteGrainSmallBlack_mat" materialId="13" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200_plasticPainted_01_mat" materialId="17" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.6939 0.2232 0"/>
+    </Material>
+    <Material name="zats3200_plasticPainted_02_mat" materialId="18" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.851 0.851 0.851"/>
+    </Material>
+    <Material name="zats3200_plasticPainted_03_mat" materialId="21" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.791 0.509 0.509"/>
+    </Material>
+    <Material name="zats3200_plasticPainted_04_mat" materialId="29" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.6939 0.2232 0"/>
+    </Material>
+    <Material name="zats3200_plasticPainted_05_mat" materialId="30" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.851 0.851 0.851"/>
+    </Material>
+    <Material name="zats3200_plasticPaintedBlack_mat" materialId="25" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200_reflectorRed_01_mat" materialId="23" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="46"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="47"/>
+      <CustomParameter name="colorScale" value="0.634 0 0"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="zats3200_reflectorRed_02_mat" materialId="35" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="46"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="47"/>
+      <CustomParameter name="colorScale" value="0.634 0 0"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="zats3200_reflectorWhite_01_mat" materialId="22" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="46"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="47"/>
+      <CustomParameter name="colorScale" value="0.752 0.752 0.752"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="zats3200_reflectorWhite_02_mat" materialId="34" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="46"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="47"/>
+      <CustomParameter name="colorScale" value="0.752 0.752 0.752"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="zats3200_rubberBlack_mat" materialId="32" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="zats3200_rubberBlackHoses_mat" materialId="11" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.01 0.01 0.01"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="zats3200_silverScratched_alphaBlending_mat" materialId="7" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="23"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+    </Material>
+    <Material name="zats3200_silverScratched_mat" materialId="28" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="34"/>
+      <Custommap name="detailSpecular" fileId="23"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+    </Material>
+    <Material name="zats3200_silverScratched_opaque_mat" materialId="16" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="23"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+    </Material>
+    <Material name="zats3200Decal_metalPainted_mat" materialId="9" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="39"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="40"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+    </Material>
+    <Material name="zats3200Grid_AMAZONE_GREEN1_mat" materialId="6" alphaBlending="true" customShaderId="5">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+      <Custommap name="detailSpecular" fileId="27"/>
+      <Custommap name="detailNormal" fileId="28"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="0.0603 0.2059 0.03"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="zats3200Lights_chrome_01_mat" materialId="39" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+    </Material>
+    <Material name="zats3200Lights_chrome_02_mat" materialId="40" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+      <CustomParameter name="colorScale" value="1 1 0"/>
+    </Material>
+    <Material name="zats3200Lights_glassClear03_01_mat" materialId="41" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="25"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="zats3200Lights_glassClear03_02_mat" materialId="42" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="25"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="zats3200Lights_plasticPaintedBlack_mat" materialId="38" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="zats3200Lights_silverScratched_mat" materialId="37" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="23"/>
+      <Custommap name="detailNormal" fileId="18"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+      <Custommap name="lightsIntensity" fileId="20"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="FertilizerH.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="zats3200_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="attachable" nodeId="73">
+        <TransformGroup name="attacherJoint" translation="0 0.228135 0.739225" rotation="0 90 0" nodeId="74"/>
+        <TransformGroup name="topReferencePoint" translation="0 1.02603 0.769176" nodeId="75"/>
+        <TransformGroup name="connectionHoses" nodeId="76">
+          <TransformGroup name="hydraulicOut01" translation="0.015072 0.520398 0.581615" rotation="40.4662 0 0" nodeId="77">
+            <Shape name="hydraulicOut01_attached" translation="-0.015072 -0.773381 -0.104749" rotation="-40.4662 0 0" shapeId="2" clipDistance="300" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="11">
+              <TransformGroup name="hydraulicOut01_detachedAdapter" translation="0.164136 0.962343 0.693216" rotation="90 0 0" nodeId="79"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="hydraulicIn01" translation="-0.042482 0.520398 0.581615" rotation="40.4662 0 0" nodeId="80">
+            <Shape name="hydraulicIn01_attached" translation="0.042482 -0.773381 -0.104749" rotation="-40.4662 0 0" shapeId="3" clipDistance="300" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="11">
+              <TransformGroup name="hydraulicIn01_detachedAdapter" translation="-0.172402 0.913415 0.692843" rotation="90 0 0" nodeId="82"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="electricIn01" translation="-0.064489 0.4875 0.553551" rotation="40.4662 0 0" nodeId="83">
+            <Shape name="electricIn01_attached" translation="0.064489 -0.730139 -0.104749" rotation="-40.4662 0 0" shapeId="4" clipDistance="300" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="11">
+              <TransformGroup name="electricIn01_detachedAdapter" translation="-0.399489 0.936308 0.699555" rotation="86.332 0 0" nodeId="85"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="lights" nodeId="86">
+        <TransformGroup name="sharedLights" nodeId="87">
+          <ReferenceNode name="yellowRectangle_01" translation="0.754 0.302805 -0.021548" rotation="-70.3763 -90 0" scale="0.468073 0.468073 0.468073" referenceId="13" nodeId="93"/>
+          <ReferenceNode name="yellowRectangle_01_01" translation="-0.754413 0.302805 -0.021548" rotation="-70.3763 90 0" scale="0.468073 0.468073 0.468073" referenceId="13" nodeId="94"/>
+          <ReferenceNode name="redRound_02" translation="0.625 0.255698 -0.163927" rotation="-64.7079 -0.407737 -0.203889" referenceId="14" nodeId="99"/>
+          <ReferenceNode name="redRound_02_01" translation="-0.624723 0.255698 -0.163927" rotation="-64.7079 -0.407737 -0.203889" referenceId="14" nodeId="100"/>
+        </TransformGroup>
+        <TransformGroup name="staticLights" nodeId="101">
+          <Shape name="zats3200Lights_static" translation="0 1.06919 -0.731389" shapeId="5" clipDistance="75" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="40,39,38,37"/>
+          <Shape name="zats3200LightsGlass_static" translation="0 1.06942 -0.739429" shapeId="6" clipDistance="75" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="41,42"/>
+        </TransformGroup>
+        <TransformGroup name="backLights" nodeId="104">
+          <Light name="backLightsHigh1" translation="1.04467 1.07599 -0.779482" rotation="-25 0 0" clipDistance="75" nodeId="105" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2">
+            <Light name="backLightsHigh2" translation="-2.08093 0 0" clipDistance="75" nodeId="106" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2"/>
+          </Light>
+        </TransformGroup>
+        <TransformGroup name="turnLights" nodeId="107">
+          <Light name="turnLightLeftBack" translation="1.04467 1.07599 -0.779482" rotation="-20 -10 0" clipDistance="75" nodeId="108" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+          <Light name="turnLightRightBack" translation="-1.03626 1.07599 -0.779482" rotation="-20 10 0" clipDistance="75" nodeId="109" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+        </TransformGroup>
+        <TransformGroup name="reverseLights" nodeId="110">
+          <Light name="reverseLight" translation="1.03331 1.07599 -0.779482" rotation="-20 0 0" clipDistance="75" nodeId="111" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="150" dropOff="3">
+            <Light name="reverseLight1" translation="-2.06474 0 0" clipDistance="75" nodeId="112" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="150" dropOff="3"/>
+          </Light>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="cover" nodeId="113">
+        <TransformGroup name="coverClosed_lod" lodDistance="0 40" nodeId="114">
+          <Shape name="coverClosed_lod0" translation="0 0.943639 0.204821" shapeId="7" clipDistance="300" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="14,12,13,15"/>
+          <Shape name="coverClosed_lod1" translation="0 0.943639 0.204821" shapeId="8" clipDistance="300" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="26,24,25,27"/>
+        </TransformGroup>
+        <TransformGroup name="coverOpen_lod" lodDistance="0 40" nodeId="117">
+          <Shape name="coverOpened_lod0" translation="0 0.943639 0.204821" shapeId="9" clipDistance="300" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="14,12,13,15"/>
+          <Shape name="coverOpened_lod1" translation="0 0.943639 0.204821" shapeId="10" clipDistance="300" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="26,25,24,27"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="fillUnit" nodeId="120">
+        <Shape name="exactFillRootNode" translation="0 1.70882 -0.032952" shapeId="11" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="121" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="fillVolume" shapeId="12" clipDistance="300" nodeId="122" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="movingParts" nodeId="123">
+        <TransformGroup name="spreaderLeft" translation="0.575201 0.349853 -0.039576" clipDistance="300" nodeId="124">
+          <TransformGroup name="spreaderLeft_lod01" clipDistance="300" nodeId="125"/>
+        </TransformGroup>
+        <TransformGroup name="spreaderRight" translation="-0.575201 0.349853 -0.039576" clipDistance="300" nodeId="126">
+          <TransformGroup name="spreaderRight_lod01" clipDistance="300" nodeId="127"/>
+        </TransformGroup>
+        <TransformGroup name="ladder02" translation="-1.24938 0.692071 0.191269" clipDistance="300" nodeId="128">
+          <Shape name="screws_decal1" translation="1.24938 -0.692071 -0.191269" shapeId="13" clipDistance="30" nodeId="129" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          <TransformGroup name="ladder02_lod01" clipDistance="300" nodeId="130"/>
+        </TransformGroup>
+        <TransformGroup name="ladder01" translation="1.24938 0.692071 0.191269" clipDistance="300" nodeId="131">
+          <Shape name="screws_decal1" translation="-1.24938 -0.692071 -0.191269" shapeId="14" clipDistance="30" nodeId="132" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+          <TransformGroup name="ladder01_lod01" clipDistance="300" nodeId="133"/>
+        </TransformGroup>
+        <TransformGroup name="supportWheelsLeft" translation="0.713481 0.217746 0.25294" clipDistance="300" nodeId="134">
+          <Shape name="colPart" translation="-0.00152 -0.104024 -0.183285" shapeId="15" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="135" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="supportWheelLeftFront" translation="0 -0.074543 0.264094" clipDistance="300" nodeId="136">
+            <TransformGroup name="supportWheelLeftFront_lod1" translation="-0.000481 0 0" clipDistance="300" nodeId="137"/>
+          </TransformGroup>
+          <TransformGroup name="supportWheelsLeft_lod1" translation="-0.000481 0 0" clipDistance="300" nodeId="138"/>
+        </TransformGroup>
+        <TransformGroup name="supportWheelsRight" translation="-0.713481 0.217746 0.25294" clipDistance="300" nodeId="139">
+          <Shape name="colPart" translation="0.001481 -0.104024 -0.183285" shapeId="16" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="140" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="supportWheelRightFront" translation="0 -0.074543 0.264094" clipDistance="300" nodeId="141">
+            <TransformGroup name="supportWheelRightFront_lod1" clipDistance="300" nodeId="142"/>
+          </TransformGroup>
+          <TransformGroup name="supportWheelsRight_lod1" clipDistance="300" nodeId="143"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="workAreas" nodeId="144">
+        <TransformGroup name="workAreaStart" nodeId="145"/>
+        <TransformGroup name="workAreaWidth" translation="-7.5 0 -5" nodeId="146"/>
+        <TransformGroup name="workAreaHeight" translation="7.5 0 -5" nodeId="147"/>
+        <TransformGroup name="sections" translation="0 0 -5" nodeId="148">
+          <TransformGroup name="section01" translation="21 0 0" nodeId="149"/>
+          <TransformGroup name="section02" translation="18 0 0" nodeId="150"/>
+          <TransformGroup name="section03" translation="15 0 0" nodeId="151"/>
+          <TransformGroup name="section04" translation="10.5 0 0" nodeId="152"/>
+          <TransformGroup name="section05" translation="9 0 0" nodeId="153"/>
+          <TransformGroup name="section06" translation="7.5 0 0" nodeId="154"/>
+          <TransformGroup name="section08" translation="-7.5 0 0" nodeId="155"/>
+          <TransformGroup name="section09" translation="-9 0 0" nodeId="156"/>
+          <TransformGroup name="section10" translation="-10.5 0 0" nodeId="157"/>
+          <TransformGroup name="section11" translation="-15 0 0" nodeId="158"/>
+          <TransformGroup name="section12" translation="-18 0 0" nodeId="159"/>
+          <TransformGroup name="section13" translation="-21 0 0" nodeId="160"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="ai" nodeId="161">
+        <TransformGroup name="sizeMarker" nodeId="162">
+          <TransformGroup name="sizeMarkerLeft" translation="1.37495 0 0.928195" nodeId="163"/>
+          <TransformGroup name="sizeMarkerRight" translation="-1.375 0 0.928195" nodeId="164"/>
+          <TransformGroup name="sizeMarkerBack" translation="1.37495 0 -1.00456" nodeId="165"/>
+        </TransformGroup>
+        <TransformGroup name="areaMarker" nodeId="166">
+          <TransformGroup name="aiMarkerLeft" translation="7.5 0 -4.8" nodeId="167"/>
+          <TransformGroup name="aiMarkerRight" translation="-7.5 0 -4.8" nodeId="168"/>
+          <TransformGroup name="aiMarkerBack" translation="0 0 -5.2" nodeId="169"/>
+        </TransformGroup>
+        <TransformGroup name="aiCollisionNode" translation="0 0 0.600566" nodeId="170"/>
+      </TransformGroup>
+      <TransformGroup name="effects" nodeId="171">
+        <TransformGroup name="fertilizerEffectLeft" translation="0.551398 0.390796 -0.076" nodeId="172"/>
+        <TransformGroup name="fertilizerEffectRight" translation="-0.551398 0.390796 -0.076" nodeId="173"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="174">
+        <Shape name="zats3200Windows" translation="0 1.35887 -0.756257" shapeId="17" clipDistance="300" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="zats3200_Decals" shapeId="18" clipDistance="50" nodeId="176" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="9"/>
+        <Shape name="zats3200Sticker_decal" shapeId="19" clipDistance="30" nodeId="177" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="36"/>
+        <Shape name="zats3200_Grid" shapeId="20" clipDistance="300" nodeId="178" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="screws_decal" shapeId="21" clipDistance="30" nodeId="179" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="8,7"/>
+        <Shape name="zats3200Windows1" translation="0 1.35887 0.675402" shapeId="22" clipDistance="300" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <TransformGroup name="lod01" lodDistance="0 40" nodeId="181">
+          <Shape name="zats3200_lod0" shapeId="23" clipDistance="300" nodeId="182" castsShadows="true" receiveShadows="true" skinBindNodeIds="182 124 126 128 131 134 136 139 141" materialIds="23,16,15,12,19,20,13,14,11,18,21,17,22"/>
+          <Shape name="zats3200_lod1" shapeId="24" clipDistance="300" nodeId="183" castsShadows="true" receiveShadows="true" skinBindNodeIds="183 125 127 130 133 137 138 142 143" materialIds="24,28,27,31,26,32,30,25,33,29,34,35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="184">
+        <Shape name="colPart01" translation="0 1.184 -0.702368" shapeId="25" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="185" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart02" translation="0 1.18352 0.610805" shapeId="25" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="186" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart03" translation="-1.14356 1.18352 -0.055029" rotation="0 90 0" shapeId="26" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="187" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart04" translation="1.10488 1.18352 -0.055029" rotation="0 90 0" shapeId="26" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="188" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -29,7 +29,7 @@
     </storeData>
     <base>
         <typeDesc>$l10n_typeDesc_fertilizerSpreader</typeDesc>
-        <filename>zats3200.i3d</filename>
+        <filename>i3d/FertilizerH.i3d</filename>
         <size width="2.6" length="1.75" height="1.9" lengthOffset="0.02"/>
         <speedLimit value="25"/>
         <components>

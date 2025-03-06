@@ -218,13 +218,13 @@
 
     <designConfigurations title="Logo">
         <designConfiguration name="Standard">
-            <objectChange node="Default" visibilityActive="true" visibilityInactive="false" />
+            <objectChange node="Logo_Default" visibilityActive="true" visibilityInactive="false" />
             <objectChange node="Logo_L" visibilityActive="false" visibilityInactive="false" />
             <objectChange node="Logo_R" visibilityActive="false" visibilityInactive="false" />
             <objectChange node="Logo_T" visibilityActive="false" visibilityInactive="false" />
         </designConfiguration>
         <designConfiguration name="Thunderfarming">
-            <objectChange node="Default" visibilityActive="false" visibilityInactive="false" />
+            <objectChange node="Logo_Default" visibilityActive="false" visibilityInactive="false" />
             <objectChange node="Logo_L" visibilityActive="true" visibilityInactive="false" />
             <objectChange node="Logo_R" visibilityActive="true" visibilityInactive="false" />
             <objectChange node="Logo_T" visibilityActive="true" visibilityInactive="false" />

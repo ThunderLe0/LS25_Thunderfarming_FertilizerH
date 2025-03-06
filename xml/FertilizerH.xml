@@ -110,8 +110,34 @@
             <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0">
                 <fillUnits>
                     <unloading width="11" offset="0 0 0"/>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="3200">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer lime" capacity="3200">
                         <exactFillRootNode node="exactFillRootNode"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+			<fillUnitConfiguration name="5.000 Liter" price="2000">
+                <fillUnits>
+                    <unloading width="11" offset="0 0 0"/>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer lime" capacity="5000">
+                        <exactFillRootNode node="exactFillRootNode"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+			<fillUnitConfiguration name="7.500 Liter" price="3000">
+                <fillUnits>
+                    <unloading width="11" offset="0 0 0"/>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer lime" capacity="7500">
+                        <exactFillRootNode node="exactFillRootNode"/>
+						<component additionalMass="800" node="zats3200_main_component1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+			<fillUnitConfiguration name="10.000 Liter" price="5000">
+                <fillUnits>
+                    <unloading width="11" offset="0 0 0"/>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer lime" capacity="10000">
+                        <exactFillRootNode node="exactFillRootNode"/>
+						<component additionalMass="1200" node="zats3200_main_component1"/>
                     </fillUnit>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -189,6 +215,31 @@
     </foliageBending>
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
     <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <designConfigurations title="Logo">
+        <designConfiguration name="Standard">
+            <objectChange node="Default" visibilityActive="true" visibilityInactive="false" />
+            <objectChange node="Logo_L" visibilityActive="false" visibilityInactive="false" />
+            <objectChange node="Logo_R" visibilityActive="false" visibilityInactive="false" />
+            <objectChange node="Logo_T" visibilityActive="false" visibilityInactive="false" />
+        </designConfiguration>
+        <designConfiguration name="Thunderfarming">
+            <objectChange node="Default" visibilityActive="false" visibilityInactive="false" />
+            <objectChange node="Logo_L" visibilityActive="true" visibilityInactive="false" />
+            <objectChange node="Logo_R" visibilityActive="true" visibilityInactive="false" />
+            <objectChange node="Logo_T" visibilityActive="true" visibilityInactive="false" />
+        </designConfiguration>
+    </designConfigurations>
+    <baseColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Basis">
+        <baseColorConfiguration name="Thunderfarming Black" color="0 0 0" isDefault="true" />
+        <material materialSlotName="Base" />
+    </baseColorConfigurations>
+    <designColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Details">
+        <designColorConfiguration name="Thunderfarming Grau" color="SHARED_GREY5" isDefault="true" />
+        <material materialSlotName="Detail" />
+    </designColorConfigurations>
+
+
     <i3dMappings>
         <i3dMapping id="zats3200_main_component1" node="0>"/>
         <i3dMapping id="attacherJoint" node="0>0|0"/>
@@ -248,7 +299,9 @@
         <i3dMapping id="aiCollisionNode" node="0>6|2"/>
         <i3dMapping id="fertilizerEffectLeft" node="0>7|0"/>
         <i3dMapping id="fertilizerEffectRight" node="0>7|1"/>
-        <i3dMapping id="zats3200_lod0" node="0>8|6|0"/>
-        <i3dMapping id="zats3200_lod1" node="0>8|6|1"/>
+        <i3dMapping id="Logo_Default" node="0>8|1"/>
+        <i3dMapping id="Logo_L" node="0>8|7"/>
+        <i3dMapping id="Logo_R" node="0>8|8"/>
+        <i3dMapping id="Logo_T" node="0>8|9"/>
     </i3dMappings>
 </vehicle>

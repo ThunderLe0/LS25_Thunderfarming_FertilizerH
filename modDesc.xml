@@ -4,13 +4,24 @@
     <version>1.0.0.0</version>
     <title>
         <en>Thunderfarming FertilizerH</en>
-		<de>Thunderfarming FertilizerH</de>
     </title>
     <description>
-        <en>FertilizerH - Thunderfarming Edition</en>
-		<de>FertilizerH - Thunderfarming Edition</de>
+        <en><![CDATA[
+Category: Fertilizer/Lime Spreaders
+Price: $25,000
+Working width: 42.0m
+Working speed: 25 kph
+Capacity: 10,000 L
+]]></en>
+		<de><![CDATA[
+Shopkategorie: Dünger-/Kalkstreuer
+Preis: 25.000€
+Arbeitsbreite: 42,0m
+Arbeitsgeschwindigkeit: 25 km/h
+Kapazität: 10.000 L
+]]></de>
     </description>
-    <iconFilename>store/store_FertilizerH.dds</iconFilename>
+    <iconFilename>store/icon_FertilizerH.dds</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/FertilizerH.xml" />
     </storeItems>

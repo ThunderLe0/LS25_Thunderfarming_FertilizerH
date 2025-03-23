@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="49" filename="../textures/Leo Text.dds"/>
+    <File fileId="49" filename="../textures/Leo_Text.dds"/>
     <File fileId="48" filename="../textures/Leo_Logo_white.dds"/>
     <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
     <File fileId="35" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
